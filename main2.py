@@ -17,9 +17,9 @@ def nickToCharname(nicknames,extra = False):
     localNames = []
     for val in nicknames:
         if not extra:
-            localNames.append(f"{names.get(str(val).lower())} ({val})")
+            localNames.append(f"{val}")
         else:
-            localNames.append(f"{names.get(str(val['name_clean']).lower())} ({val['name_clean']})")
+            localNames.append(f"{val['name_clean']}")
     return localNames
 
 
